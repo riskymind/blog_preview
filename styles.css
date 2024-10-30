@@ -1,0 +1,140 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --yellow_minus: hsl(47, 88%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --fs: 1rem;
+  --ff-figtree: "Figtree";
+  --fw-500: 500;
+  --fw-800: 800;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf),
+    url(./assets/fonts/static/Figtree-ExtraBold.ttf),
+    url(./assets/fonts/static/Figtree-SemiBold.ttf);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+video,
+picture,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* GENERAL RULES */
+
+body {
+  font-family: "Figtree";
+  font-size: var(--fs);
+  line-height: 1.5;
+  background-color: var(--yellow);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: var(--yellow);
+}
+
+.learning {
+  background: var(--white);
+  max-width: 355px;
+  border: 1px solid var(--gray-950);
+  border-radius: 1.65rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1.5rem;
+  box-shadow: 10px 10px var(--gray-950);
+  margin: 2rem;
+}
+
+.learning__logo_bloc img {
+  border-radius: 0.75rem;
+}
+
+.learning__hint {
+  font-weight: var(--fw-800);
+  font-size: 0.775rem;
+  background-color: var(--yellow);
+  max-width: 30%;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.learning__hint:hover {
+  cursor: pointer;
+  background-color: var(--yellow_minus);
+}
+
+.learning__date {
+  font-size: 0.87rem;
+  color: var(--gray-950);
+  font-style: light;
+}
+
+.learning__title {
+  font-weight: var(--fw-800);
+  color: var(--gray-950);
+}
+
+.learning__description {
+  font-size: 0.92rem;
+  color: var(--gray-500);
+  font-weight: var(--fw-500);
+}
+
+.learning__author {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 10px;
+}
+
+.learning__author img {
+  width: 35px;
+}
+
+.learning__author p {
+  font-weight: var(--fw-800);
+  color: var(--gray-950);
+}
