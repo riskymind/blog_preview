@@ -15,7 +15,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/riskymind/blog_preview)
-- Live Site URL: [Add live site URL here](blog-preview-78xjyb7xe-riskyminds-projects.vercel.app)
+- Live Site URL: (blog-preview-78xjyb7xe-riskyminds-projects.vercel.app)
 
 ### Built with
 
