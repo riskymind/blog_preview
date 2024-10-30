@@ -138,3 +138,13 @@ a:active {
   font-weight: var(--fw-800);
   color: var(--gray-950);
 }
+
+.attribution {
+  font-size: 0.875rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-bottom: 2rem;
+}
